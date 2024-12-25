@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      #img1{
+         position: absolute;
+         top: 0;
+         left: 37%;
+         right: 0;
+         bottom: 0;
+      }
+      #img2{
+         position: absolute;
+         top: 0;
+         left: 37%;
+         right: 0;
+         bottom: 0;
+      }
+      #btn{
+         margin-left: 45%;
+         margin-top: 28%;
+      }
+
+   </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+   <div class="images">
+      <img src="/images/gadod-removebg-preview.png" alt="" id="img1">
+      <img src="/images/test.png" alt=""  id="img2">
+   
+   </div>
+
+   <div id="btn">
+      <button class="bg-blue-700 py-2 px-8 text-white text-3xl rounded-lg"  id="btn1" >ON</button>
+      <button class="bg-red-700 py-2 px-8 text-white text-3xl rounded-lg"   id="btn2">OF</button>
+
+    </div>
+
+   <script>
+      let image1 = document.querySelector("#img1")
+      let image2 = document.querySelector("#img2")
+   
+      let button1 = document.querySelector("#btn1")
+      let button2 = document.querySelector("#btn2")
+
+      button1.addEventListener("click", ()=>{
+         image2.style.display = "block"
+         image1.style.display = "none"
+      })
+
+
+      button2.addEventListener("click", ()=>{
+         image1.style.display = "block"
+         image2.style.display = "none"
+      })
+
+      
+      
+
+   </script>
+</body>
+</html>
